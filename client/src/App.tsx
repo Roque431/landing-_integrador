@@ -4,6 +4,7 @@ import { theme } from '@/styles/theme';
 import { GlobalStyles } from '@/styles/GlobalStyles';
 import { Header, Hero, DemoSection, FeaturesSection, ProfessionalMatching, UseCasesSection, HowItWorks, WhyUseLexIA, TechnologyStack, FooterSection } from '@/components';
 import AnimatedSection from '@/components/AnimatedSection';
+import aiIllustrationImage from '@/assets/ai-illustration.png';
 
 function App() {
   const handlePrimaryClick = () => {
@@ -28,7 +29,7 @@ function App() {
         description="Obtén respuestas legales instantáneas con IA. Pregunta en lenguaje natural y recibe orientación legal precisa, referencias a leyes aplicables y conexión directa con abogados especializados y servicios profesionales cuando los necesites."
         primaryButtonText="Prueba LexIA en Acción"
         secondaryButtonText=""
-        illustrationImage="/ai-illustration.png"
+        illustrationImage={aiIllustrationImage}
         onPrimaryClick={handlePrimaryClick}
         onSecondaryClick={handleSecondaryClick}
       />

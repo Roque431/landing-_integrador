@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { theme } from '@/styles/theme';
 import { Container } from '@/components/molecules';
+import aiBubbleImage from '@/assets/ai-bubble.png';
 import { Heading, Text, Button } from '@/components/atoms';
 import { searchLegalKnowledge, LegalAnswer } from '@/lib/legalKnowledge';
 
@@ -311,7 +312,7 @@ export const DemoSection: React.FC = () => {
             <EnergyWave />
             <EnergyWave />
             <EnergyWave />
-            <AIIcon src="/ai-bubble.png" alt="AI Bubble" />
+            <AIIcon src={aiBubbleImage} alt="AI Bubble" />
           </AIIconWrapper>
           <PromptText level={3}>Haz una pregunta legal para comenzar</PromptText>
           <Text size="sm" color="secondary">

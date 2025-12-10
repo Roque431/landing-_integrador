@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 import { theme } from '@/styles/theme';
 import { Container } from '@/components/molecules';
 import { Text } from '@/components/atoms';
+import logoImage from '@/assets/logo.png';
 
 const StyledFooter = styled.footer`
   background-color: #1a2332;
@@ -129,7 +130,7 @@ export const FooterSection: React.FC = () => {
         <FooterContent>
           <FooterBrand>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="LexIA" style={{ height: '40px' }} />
+              <img src={logoImage} alt="LexIA" style={{ height: '40px' }} />
               <span style={{ fontSize: '24px', fontWeight: 'bold' }}>LexIA</span>
             </div>
             <Text size="sm" color="inverse">

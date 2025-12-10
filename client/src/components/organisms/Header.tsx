@@ -4,6 +4,7 @@ import { theme } from '@/styles/theme';
 import { Container } from '@/components/molecules';
 import { NavLink } from '@/components/molecules';
 import { Button } from '@/components/atoms';
+import aiBubbleImage from '@/assets/ai-bubble.png';
 
 interface HeaderProps {
   logo?: string;
@@ -154,7 +155,7 @@ export const Header: React.FC<HeaderProps> = ({ logo, logoText = 'LexIA' }) => {
       <Container>
         <HeaderContent>
           <LogoSection>
-            <img src="/ai-bubble.png" alt="AI Bubble" className="logo-bubble" />
+            <img src={aiBubbleImage} alt="AI Bubble" className="logo-bubble" />
             <span>{logoText}</span>
           </LogoSection>
 
